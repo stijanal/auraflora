@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Aura Flora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="index-page">
+
+<!-- HEADER -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./slikee/logo.cvet.jpg" alt="Aura Flora logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="o_nama.html">O nama</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="saksijsko.html">Saksijsko cveće</a></li>
+            <li><a href="buketi.html">Buketi</a></li>
+            <li><a href="dekoracije.html">Dekoracije</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="products-page">
+    <div class="page-card">
+        <h1 class="main-title">Saksijsko Cveće</h1>
+        <p class="subtitle">Unesite dah prirode u vaš dom ili kancelariju našim pažljivo negovanim sobnim biljkama.</p>
+
+        <section class="products-grid">
+            <div class="product-card" id="prod-7">
+                <img src="./slikee/saksija/saksija1.jpg" alt="Lale Crvene i Bele">
+                <h3>Lale Crvene i Bele</h3>
+                <p class="price">2800 RSD</p>
+                <button class="add-btn" onclick="addToCart('Lale Crvene i Bele', 2800, 'prod-7')">Dodaj u korpu</button>
+                <button class="remove-trash" onclick="removeFromCartById('prod-7')" style="display: none;">🗑️ Ukloni</button>
+            </div>
+
+            <div class="product-card" id="prod-8">
+                <img src="./slikee/saksija/saksija2.webp" alt="Gardenia Jasminoides">
+                <h3>Gardenia Jasminoides</h3>
+                <p class="price">2500 RSD</p>
+                <button class="add-btn" onclick="addToCart('Gardenia Jasminoides', 2500, 'prod-8')">Dodaj u korpu</button>
+                <button class="remove-trash" onclick="removeFromCartById('prod-8')" style="display: none;">🗑️ Ukloni</button>
+            </div>
+
+            <div class="product-card" id="prod-9">
+                <img src="./slikee/saksija/saksija3.jpeg" alt="Sobni Mix">
+                <h3>Sobni Mix</h3>
+                <p class="price">3000 RSD</p>
+                <button class="add-btn" onclick="addToCart('Sobni Mix', 3000, 'prod-9')">Dodaj u korpu</button>
+                <button class="remove-trash" onclick="removeFromCartById('prod-9')" style="display: none;">🗑️ Ukloni</button>
+            </div>
+
+            <div class="product-card" id="prod-10">
+                <img src="./slikee/saksija/saksija4.webp" alt="Spatifilum">
+                <h3>Spatifilum</h3>
+                <p class="price">2500 RSD</p>
+                <button class="add-btn" onclick="addToCart('Spatifilum', 2500, 'prod-10')">Dodaj u korpu</button>
+                <button class="remove-trash" onclick="removeFromCartById('prod-10')" style="display: none;">🗑️ Ukloni</button>
+            </div>
+
+            <div class="product-card" id="prod-11">
+                <img src="./slikee/saksija/saksija5.jpg" alt="Orhideja">
+                <h3>Orhideja Phalaenopsis</h3>
+                <p class="price">2800 RSD</p>
+                <button class="add-btn" onclick="addToCart('Orhideja', 2800, 'prod-11')">Dodaj u korpu</button>
+                <button class="remove-trash" onclick="removeFromCartById('prod-11')" style="display: none;">🗑️ Ukloni</button>
+            </div>
+
+            <div class="product-card" id="prod-12">
+                <img src="./slikee/saksija/saksija6.jpg" alt="Crvena Ruža">
+                <h3>Crvena Ruža</h3>
+                <p class="price">1500 RSD</p>
+                <button class="add-btn" onclick="addToCart('Crvena Ruža', 1500, 'prod-12')">Dodaj u korpu</button>
+                <button class="remove-trash" onclick="removeFromCartById('prod-12')" style="display: none;">🗑️ Ukloni</button>
+            </div>
+        </section>
+    </div>
+</main>
+<div class="cart">
+    <h3>🛒 Korpa</h3>
+    <ul id="cart-items"></ul>
+    <p id="total">Ukupno: 0 RSD</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+<!-- FOOTER -->
+<footer>
+    <div class="footer-logo">
+        <img src="./slikee/logo.cvet.jpg" alt="Aura Flora logo">
+    </div>
+    <div class="footer-content">
+        <div class="footer-contact">
+            <p><strong>Email:</strong> info@auraflora.rs</p>
+            <p><strong>Adresa:</strong> Kralja Petra 12, Beograd</p>
+            <p><strong>Telefon:</strong> +381 64 123 4567</p>
+        </div>
+        <div class="footer-social">
+            <h4>Pratite nas</h4>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+</footer>
+</html>
